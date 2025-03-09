@@ -1,25 +1,25 @@
-let output;
-output=document.all;
-output=document.all[11];
-output=document.all.length;
+// let output;
+// output=document.all;
+// output=document.all[11];
+// output=document.all.length;
 
 
-output=document.documentElement;
+// output=document.documentElement;
 
-output= document.head;
-output= document.body;
-output= document.body.children;
+// output= document.head;
+// output= document.body;
+// output= document.body.children;
 
-output=document.doctype;
-output=document.domain;
-output=document.URL;
-output=document.characterSet;
-output=document.contentType;
+// output=document.doctype;
+// output=document.domain;
+// output=document.URL;
+// output=document.characterSet;
+// output=document.contentType;
 
-output=document.forms[0];
-output=document.forms[0].id;
-output=document.forms[0].method;
-output=document.forms[0].action;
+// output=document.forms[0];
+// output=document.forms[0].id;
+// output=document.forms[0].method;
+// output=document.forms[0].action;
 
 // document.forms[0].id='new-id';
 
@@ -81,7 +81,7 @@ output=document.forms[0].action;
 
 // const list=document.querySelector('ul');
 // console.log(list);
-// const firstItem=document.querySelector('li');
+// const firstItem=list.querySelector('li');
 // firstItem.style.color="blue";
 
 // let listItems=document.querySelectorAll(".item");
@@ -89,14 +89,14 @@ output=document.forms[0].action;
 
 // listItems[1].style.color='red';
 
-// listItems.forEach((item)=>{
+// listItems.forEach((item,index)=>{
 //   item.style.color='red';
 
 //   if(index===1){
 // item.remove();
 //   }
 //   if(index===0){
-//     item.innerText=`  Orange Juice
+//     item.innerHTML=`  Orange Juice
 //           <button class="remove-item btn-link text-red">
 //             <i class="fa-solid fa-xmark"></i>
 //           </button>`;
@@ -104,13 +104,19 @@ output=document.forms[0].action;
 // })
 
 
-const listItems2=document.getElementsByClassName('item');
+// const listItems2=document.getElementsByClassName('item');
+ 
+// console.log(listItems2[2].innerText);
 
-console.log(listItems2[2].innerText);
+// const listItemsArray=Array.from(listItems2);
 
-const listItemsArray=Array.from(listItems2);
-
-listItems2.forEach((item)=>{
-  console.log(item.innerText);
+// listItemsArray.forEach((item)=>{
+//   console.log(item.innerText);
   
-})
+// })
+
+
+const listItem3=document.getElementsByTagName('li');
+
+console.log(listItem3[1].innerText);
+
